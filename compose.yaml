@@ -9,6 +9,8 @@ services:
       - TZ=Europe/Berlin
     volumes:
       - ./config:/config
+      - /media/Ziegel/Bilder:/media/Bilder:ro  
+      - /media/Ziegel/Videos:/media/Videos:ro  
       - /etc/localtime:/etc/localtime:ro
       - /run/dbus:/run/dbus:ro  
     network_mode: host
